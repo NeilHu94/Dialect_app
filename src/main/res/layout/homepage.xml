@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/my_icon"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:id="@+id/order_name"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:text="添加账户"
+            android:textSize="25sp"
+            android:onClick="addAccount"
+            android:layout_gravity="center"
+
+            />
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/qiandao"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/qiandao"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"
+        />
+<LinearLayout
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_space"
+        android:text="我的空间"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        />
+        <View
+    android:layout_width="2dp"
+    android:layout_height="32dp"
+    android:background="#EBEBEB"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_dialect"
+        android:text="我的方言"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"
+/>
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/message"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的消息"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_message"
+            />
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#EBEBEB"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/coffee"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咖啡订购"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_coffee"
+            android:onClick="CoffeeOrder"
+            />
+
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/dingwei"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附近方言"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_location"
+            />
+
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/score"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分兑换"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_score"
+            />
+
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/selector"
+            android:id="@+id/collect_btn"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏分享"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_"
+            />
+
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+                android:background="@drawable/theme"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主题换肤"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_theme"
+            />
+
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/about"
+            android:id="@+id/about"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于app"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/my_about_text"
+            />
+
+        <ImageView
+            android:paddingBottom="200dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:background="@drawable/go"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
