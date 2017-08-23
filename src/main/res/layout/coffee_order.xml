@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.demo.neilhu.calculate.com.demo.neilhu.coffeeOrder.MainActivity"
+        android:orientation="vertical">
+        <EditText
+            android:hint="输入客户名称"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            />
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text ="@string/toppings"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/textView" />
+
+        <CheckBox
+            android:id="@+id/has_cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="生奶油"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            />
+        <CheckBox
+            android:textColor="#000000"
+            android:id="@+id/has_chocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="巧克力"
+            android:fontFamily="sans-serif"
+            />
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text ="杯数"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/decrement"
+                android:layout_marginLeft="16dp"
+                android:onClick="decrement"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/order"
+                android:layout_marginTop="16dp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text ="1"
+                android:textSize="48sp"
+                android:layout_marginLeft="16dp"/>
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/increment"
+                android:layout_marginLeft="16dp"
+                android:onClick="increment"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text ="价格"
+            android:layout_marginLeft="16dp"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/price_text_view"
+            android:layout_marginTop="16dp"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text ="¥ 12.00"
+            android:textSize="36sp"
+            android:layout_marginLeft="26dp"
+            android:fontFamily="sans-serif"/>
+        <Button
+            android:id="@+id/Click"
+            android:layout_marginTop="16dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="@drawable/order"
+            android:layout_marginLeft="16dp"
+            android:onClick="displayMessage"
+            />
+
+    </LinearLayout>
+</ScrollView>
